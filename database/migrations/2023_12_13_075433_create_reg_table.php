@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('reg', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email');
-            $table->string('pass');
+            $table->string('name',30);
+            $table->string('email',20);
+            $table->string('pass',40);
             $table->timestamps();
         });
     }

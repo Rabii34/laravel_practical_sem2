@@ -32,7 +32,7 @@
         </thead>
         <tbody>
             @foreach ($regData as $value)
-            {{-- {{print_r($value)}} --}}
+           
                 
             <tr class="">
                 <td scope="row">{{$value->id}}</td>
