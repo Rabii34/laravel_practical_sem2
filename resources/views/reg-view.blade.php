@@ -10,11 +10,53 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+{{-- inline css --}}
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+    margin: 25px;
+    margin-left: 45px;
+    margin-right: 285px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  </style>
 </head>
 
 <body>
-
+   {{-- header --}}
+   
+   <ul>
+    <li><a href="/form">Form</a></li>
+    <li><a href="/reg/view">Table</a></li>
+    <li><a href="/reg/edit/{id}">Upd_form</a></li>
+   
+    
+  </ul>
+  {{-- table --}}
+  <center><h1>Table</h1></center>
     <div class="container mt-5">
 
         
